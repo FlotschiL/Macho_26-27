@@ -1,0 +1,332 @@
+@page "/"
+@rendermode InteractiveServer
+
+<div class="container">
+    <h1><code>[ConcurrencyCheck]</code> — optimistic concurrency in EF Core</h1>
+    <p class="sub">
+        One attribute + one extra column in the table. From then on EF Core puts the
+        <em>original</em> value of that column into the WHERE clause of every UPDATE it
+        generates. If another user committed a change to the row in the meantime, the UPDATE
+        matches 0 rows and <code>SaveChanges()</code> throws
+        <code>DbUpdateConcurrencyException</code> — instead of silently overwriting the other
+        user's data.
+    </p>
+
+    @if (_error is not null)
+    {
+        <div class="banner">⚠ @_error</div>
+    }
+
+    <div class="grid">
+        <div>
+            <section class="card">
+                <h2>1 · the entity</h2>
+                <pre class="code">@EntityCode</pre>
+                <p class="hint">
+                    <code>[ConcurrencyCheck]</code> = "this column is a concurrency token".
+                    It is a <em>manual</em> token: the application itself increments it on
+                    every save (EF Core does not do it automatically).
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>2 · the UPDATE EF Core generates for a save</h2>
+                <pre class="code">UPDATE tickets_cc
+SET available   = @@p0,     -- the new value
+    row_version = @@p1       -- the new token value
+WHERE Id        = @@p2
+  AND row_version = @@p3;    -- &larr; the ORIGINAL token: the check</pre>
+                <p class="hint">
+                    The <code>AND row_version = @@p3</code> part is added by
+                    <code>[ConcurrencyCheck]</code>. If another session changed the row in the
+                    meantime, @@p3 matches nothing → 0 rows affected → exception, no silent
+                    overwrite. (Watch the real SQL and parameters in the step log.)
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>3 · the row in MySQL (<span class="mono">tickets_cc</span>)</h2>
+                <table class="tbl">
+                    <thead><tr><th>Id</th><th>available</th><th>row_version</th></tr></thead>
+                    <tbody>
+                        @if (_row is null)
+                        {
+                            <tr><td colspan="3" class="muted">not loaded yet — click step 1</td></tr>
+                        }
+                        else
+                        {
+                            <tr>
+                                <td>@_row.Id</td>
+                                <td>@_row.Available</td>
+                                <td>@_row.RowVersion</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <div class="row">
+                    <button class="btn" @onclick="Step1" disabled="@(_step != 0)">
+                        1 · both users read the row
+                    </button>
+                    <button class="btn" @onclick="Step2" disabled="@(_step != 1)">
+                        2 · user 1 sells 1 ticket (COMMIT)
+                    </button>
+                    <button class="btn btn-err" @onclick="Step3" disabled="@(_step != 2)">
+                        3 · user 2 sells 1 ticket (STALE READ)
+                    </button>
+                    <button class="btn btn-ok" @onclick="Step4" disabled="@(_step != 3)">
+                        4 · user 2 re-reads &amp; retries
+                    </button>
+                    <button class="btn btn-reset" @onclick="Reset">↺ reset</button>
+                </div>
+                <p class="hint">
+                    Two <code>AppDbContext</code> instances = two independent "users", each on
+                    its own MySQL session (you could see the two connections in
+                    <code>SHOW PROCESSLIST</code>).
+                </p>
+            </section>
+        </div>
+
+        <div>
+            <section class="card logcard">
+                <h2>step log — the SQL each session actually runs</h2>
+                <div class="log">
+                    @foreach (var e in _log)
+                    {
+                        <div class="logline k-@e.Kind.ToLowerInvariant()">
+                            <span class="ts">@e.Time.ToString("HH:mm:ss.fff")</span>
+                            <span class="tag">@e.Kind</span>
+                            <pre class="msg">@e.Message</pre>
+                        </div>
+                    }
+                    @if (_log.Count == 0)
+                    {
+                        <div class="logline k-info">
+                            <span class="ts"></span>
+                            <span class="tag">INFO</span>
+                            <pre class="msg muted">Press “1 · both users read the row” to start the demo.</pre>
+                        </div>
+                    }
+                </div>
+            </section>
+        </div>
+    </div>
+
+    @if (_boom is not null)
+    {
+        <div class="banner">
+            <b>💥 DbUpdateConcurrencyException</b> — user 2's save was rejected:
+            <pre>@_boom.Message</pre>
+            <span class="hint">
+                This is exactly the point of <code>[ConcurrencyCheck]</code>: without the
+                attribute, user 2's stale update would have been applied silently (last write
+                wins). Now the app knows someone else won, and can re-read and retry (step 4).
+            </span>
+        </div>
+    }
+</div>
+
+@code {
+    private readonly record struct LogLine(DateTime Time, string Kind, string Message);
+
+    private const string EntityCode = """
+public class Ticket
+{
+    public int Id { get; set; }
+    public int Available { get; set; }
+
+    [ConcurrencyCheck]     // &larr; the whole trick
+    public int RowVersion { get; set; }
+}
+""";
+
+    private AppDbContext? _u1;
+    private AppDbContext? _u2;
+    private Ticket? _t1, _t2;
+    private Ticket? _row;
+    private int _step;
+    private int _origVersion = -1;
+    private string? _error;
+    private DbUpdateConcurrencyException? _boom;
+    private List<LogLine> _log = new();
+
+    [CascadingParameter]
+    private bool Prerendered { get; set; }
+
+    protected override void OnInitialized()
+    {
+        // Prerendering pass: render the static page only, touch no database.
+        if (Prerendered)
+        {
+            return;
+        }
+
+        // Interactive pass: two contexts = two "users", each on its own
+        // connection / session.
+        _u1 = AppDbContext.Create("user 1", Sql);
+        _u2 = AppDbContext.Create("user 2", Sql);
+        _ = RefreshRowAsync();
+    }
+
+    public void Dispose()
+    {
+        _u1?.Dispose();
+        _u2?.Dispose();
+    }
+
+    // ------------------------------------------------------------------
+    // logging (EF's LogTo callback → thread-safe UI update)
+    // ------------------------------------------------------------------
+
+    private void Sql(string msg) => AddLine("SQL", msg);
+    private void Log(string kind, string message) => AddLine(kind, message);
+
+    private void AddLine(string kind, string message)
+    {
+        _ = InvokeAsync(() =>
+        {
+            _log.Add(new LogLine(DateTime.Now, kind, message));
+            if (_log.Count > 300) _log.RemoveAt(0);
+            StateHasChanged();
+        });
+    }
+
+    private void Fail(Exception ex)
+    {
+        _error = ex.Message;
+        Log("ERR", ex.Message);
+    }
+
+    // ------------------------------------------------------------------
+    // the four steps + reset
+    // ------------------------------------------------------------------
+
+    /// <summary>Both users read the same row; user 2 keeps its session open.</summary>
+    private async Task Step1()
+    {
+        try
+        {
+            _error = null;
+
+            // Keep user 2's physical connection open so the two users really
+            // own two distinct MySQL sessions at the same time.
+            if (_u2!.Database.GetDbConnection().State != System.Data.ConnectionState.Open)
+            {
+                await _u2.Database.OpenConnectionAsync();
+                Log("TX", "user 2 opens (and keeps open) its own MySQL session — a second connection you could see with SHOW PROCESSLIST.");
+            }
+
+            _t1 = await _u1!.Tickets.AsTracking().FirstAsync(t => t.Id == 1);
+            _t2 = await _u2.Tickets.AsTracking().FirstAsync(t => t.Id == 1);
+            _origVersion = _t2.RowVersion;
+
+            Log("OK", $"user 1's snapshot: available={_t1.Available}, row_version={_t1.RowVersion}");
+            Log("OK", $"user 2's snapshot: available={_t2.Available}, row_version={_t2.RowVersion}  (same row, same moment)");
+
+            await RefreshRowAsync();
+            _step = 1;
+        }
+        catch (Exception ex) { Fail(ex); }
+    }
+
+    /// <summary>User 1 modifies the row and commits.</summary>
+    private async Task Step2()
+    {
+        try
+        {
+            _error = null;
+
+            _t1!.Available -= 1;
+            _t1.RowVersion += 1;            // manual token: the app bumps it
+
+            await _u1!.SaveChangesAsync();
+            Log("OK", "user 1 committed: the UPDATE matched 1 row, because row_version was still the original value.");
+
+            await RefreshRowAsync();
+            _step = 2;
+        }
+        catch (Exception ex) { Fail(ex); }
+    }
+
+    /// <summary>User 2 saves its stale snapshot → DbUpdateConcurrencyException.</summary>
+    private async Task Step3()
+    {
+        try
+        {
+            _error = null;
+
+            _t2!.Available -= 1;
+            _t2.RowVersion += 1;
+
+            try
+            {
+                await _u2!.SaveChangesAsync();
+                Log("WARN", "unexpected: user 2's save succeeded — [ConcurrencyCheck] would have to be missing for this.");
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                _boom = ex;
+                await RefreshRowAsync();
+                Log("ERR", $"user 2's UPDATE matched 0 rows: the DB now has row_version={_row!.RowVersion}, but user 2's WHERE still requires the original value {_origVersion}.");
+                Log("ERR", "→ EF Core throws DbUpdateConcurrencyException; user 2's stale change was NOT written.");
+            }
+
+            _step = 3;
+        }
+        catch (Exception ex) { Fail(ex); }
+    }
+
+    /// <summary>The standard fix: discard the stale snapshot, re-read, re-apply.</summary>
+    private async Task Step4()
+    {
+        try
+        {
+            _error = null;
+
+            _u2!.ChangeTracker.Clear();
+            Log("OK", "user 2 discards its stale snapshot (ChangeTracker.Clear) and reads the row again…");
+
+            var fresh = await _u2.Tickets.AsTracking().FirstAsync(t => t.Id == 1);
+            Log("OK", $"new snapshot: available={fresh.Available}, row_version={fresh.RowVersion} — up to date again.");
+
+            fresh.Available -= 1;
+            fresh.RowVersion += 1;
+
+            await _u2.SaveChangesAsync();
+            Log("OK", "retry committed: the UPDATE matched 1 row again. Both sales are in the DB.");
+
+            _boom = null;
+            await RefreshRowAsync();
+            _step = 4;
+        }
+        catch (Exception ex) { Fail(ex); }
+    }
+
+    /// <summary>Restores the demo row to (available=100, row_version=0).</summary>
+    private async Task Reset()
+    {
+        try
+        {
+            _error = null;
+
+            await _u1!.Database.ExecuteSqlRawAsync(
+                "UPDATE tickets_cc SET available = 100, row_version = 0 WHERE Id = 1");
+
+            _u1.ChangeTracker.Clear();
+            _u2!.ChangeTracker.Clear();
+            _t1 = _t2 = null;
+            _step = 0;
+            _boom = null;
+
+            Log("TX", "reset: row restored to (available=100, row_version=0), both change trackers cleared.");
+            await RefreshRowAsync();
+        }
+        catch (Exception ex) { Fail(ex); }
+    }
+
+    /// <summary>Fresh read of the real DB state, so the table always shows the truth.</summary>
+    private async Task RefreshRowAsync()
+    {
+        await using var probe = AppDbContext.Create("db", Sql);
+        _row = await probe.Tickets.AsNoTracking().FirstAsync(t => t.Id == 1);
+    }
+}

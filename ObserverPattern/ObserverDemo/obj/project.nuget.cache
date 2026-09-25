@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jk42xdEtTgU=",
+  "success": true,
+  "projectFilePath": "/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/ObserverDemo.csproj",
+  "expectedPackageFiles": [
+    "/home/flo/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.11/microsoft.aspnetcore.app.internal.assets.10.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
