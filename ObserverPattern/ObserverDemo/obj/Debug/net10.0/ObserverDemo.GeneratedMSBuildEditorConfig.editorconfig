@@ -11,57 +11,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ObserverDemo
 build_property.RootNamespace = ObserverDemo
-build_property.ProjectDir = /home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/
+build_property.ProjectDir = C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\Flotschi\Macho_26-27\ObserverPattern\ObserverDemo\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo
+build_property.MSBuildProjectDirectory = C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\Flotschi\Macho_26-27\ObserverPattern\ObserverDemo
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/App.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db3VudGVyLnJhem9y
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/NotFound.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ob3RGb3VuZC5yYXpvcg==
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/NotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9XZWF0aGVyLnJhem9y
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/Routes.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-bi17zhvq6y
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-qoeq9sptay
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-60rqcedzkq
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-cpmutncag3
 
-[/home/flo/Documents/GitHub/Macho_26-27/ObserverPattern/ObserverDemo/Components/Layout/ReconnectModal.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUmVjb25uZWN0TW9kYWwucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-8u5nyzdn8l
+[C:/Users/Tobias/Desktop/SCHOOL/5CHIT/SEW_INSY/Flotschi/Macho_26-27/ObserverPattern/ObserverDemo/Components/Layout/ReconnectModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUmVjb25uZWN0TW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-niwo607a8d

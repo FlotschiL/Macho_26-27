@@ -1,0 +1,15 @@
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\bin\Debug\net10.0\ConsoleEvents.exe
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\bin\Debug\net10.0\ConsoleEvents.deps.json
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\bin\Debug\net10.0\ConsoleEvents.runtimeconfig.json
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\bin\Debug\net10.0\ConsoleEvents.dll
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\bin\Debug\net10.0\ConsoleEvents.pdb
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\ConsoleEvents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\ConsoleEvents.AssemblyInfoInputs.cache
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\ConsoleEvents.AssemblyInfo.cs
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\ConsoleEvents.csproj.CoreCompileInputs.cache
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\ConsoleEvents.sourcelink.json
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\ConsoleEvents.dll
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\refint\ConsoleEvents.dll
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\ConsoleEvents.pdb
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\ConsoleEvents.genruntimeconfig.cache
+C:\Users\Tobias\Desktop\SCHOOL\5CHIT\SEW_INSY\MACHO5C\ConsoleEvents\ConsoleEvents\obj\Debug\net10.0\ref\ConsoleEvents.dll
