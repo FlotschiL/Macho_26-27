@@ -15,130 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46a9f47c-ff25-45ff-8d6f-a980a7a2bda9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/INSY_01.Blazor/App.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/INSY_01.Blazor/Data.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/INSY_01.Blazor/INSY_01.Blazor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/INSY_01.Blazor/Pages/Demo.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/INSY_01.Blazor/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/INSY_01.Blazor/_Imports.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/.idea/.idea.ObserverPattern/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/.idea/.idea.ObserverPattern/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/App.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Layout/MainLayout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Layout/MainLayout.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Layout/NavMenu.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Layout/ReconnectModal.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Layout/ReconnectModal.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Layout/ReconnectModal.razor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Pages/Counter.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Pages/Error.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Pages/Home.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Pages/NotFound.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Pages/Weather.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/Routes.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Components/_Imports.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/ObserverDemo.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/Debug/net10.0/EmbeddedAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/Debug/net10.0/ObserverDemo.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/Debug/net10.0/ObserverDemo.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/Debug/net10.0/ObserverDemo.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/Debug/net10.0/ObserverDemo.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/Debug/net10.0/ObserverDemo.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/Debug/net10.0/ValidatableTypeAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/ObserverDemo.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/ObserverDemo.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/ObserverDemo.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverDemo/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/ObserverPattern.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/Debug/net10.0/ObserverPattern.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/Debug/net10.0/ObserverPattern.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/Debug/net10.0/ObserverPattern.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/Debug/net10.0/ObserverPattern.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/Debug/net10.0/ObserverPattern.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/ObserverPattern.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/ObserverPattern.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/ObserverPattern.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/ObserverPattern/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.INSY_01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.INSY_01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01.sln" beforeDir="false" afterPath="$PROJECT_DIR$/INSY_01.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/INSY_01.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/Debug/net10.0/INSY_01.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/Debug/net10.0/INSY_01.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/Debug/net10.0/INSY_01.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/Debug/net10.0/INSY_01.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/Debug/net10.0/INSY_01.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/INSY_01.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/INSY_01.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/INSY_01.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/rider.project.model.nuget.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INSY_01/obj/rider.project.restore.info" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,23 +50,23 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0090994811442848" />
-      <entry key="MS500" value="1.3906639400861587" />
-      <entry key="S2" value="1.790589116603944" />
-      <entry key="S5" value="1.9102911754006484" />
-      <entry key="S10" value="1.9540918065892026" />
-      <entry key="S30" value="1.9844569336176408" />
-      <entry key="S60" value="1.992198038296359" />
-      <entry key="M2" value="1.9962568346802216" />
-      <entry key="M5" value="2.069019320255202" />
-      <entry key="M10" value="2.5305721793315743" />
-      <entry key="M15" value="3.0408595391398023" />
-      <entry key="M30" value="4.040700987468792" />
-      <entry key="H1" value="4.857114298219447" />
-      <entry key="H2" value="5.38061207216985" />
-      <entry key="H4" value="5.6772910319877665" />
-      <entry key="D1" value="5.944312991111113" />
-      <entry key="W1" value="5.991996844282134" />
+      <entry key="MS100" value="1.0019262370508726" />
+      <entry key="MS500" value="1.31002590515503" />
+      <entry key="S2" value="2.92209345219208" />
+      <entry key="S5" value="5.537411244695679" />
+      <entry key="S10" value="7.580824520101015" />
+      <entry key="S30" value="9.653565928284928" />
+      <entry key="S60" value="10.29655317886273" />
+      <entry key="M2" value="10.64049795763754" />
+      <entry key="M5" value="10.923227729155883" />
+      <entry key="M10" value="11.452293574853435" />
+      <entry key="M15" value="11.984860608539394" />
+      <entry key="M30" value="13.00899337941999" />
+      <entry key="H1" value="13.839750286699621" />
+      <entry key="H2" value="14.371446192447715" />
+      <entry key="H4" value="14.672571009051232" />
+      <entry key="D1" value="14.943505759259162" />
+      <entry key="W1" value="14.991881000928224" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -211,23 +88,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.009099484501704416" />
-      <entry key="MS500" value="0.41085695306486947" />
-      <entry key="S2" value="1.1675534672453565" />
-      <entry key="S5" value="1.5871843149268778" />
-      <entry key="S10" value="1.7768269641740901" />
-      <entry key="S30" value="1.9214866241522295" />
-      <entry key="S60" value="1.9602009776066507" />
-      <entry key="M2" value="1.9801281054956748" />
-      <entry key="M5" value="2.0625136392892305" />
-      <entry key="M10" value="2.5272397283572547" />
-      <entry key="M15" value="3.0385818516645493" />
-      <entry key="M30" value="4.039507763649679" />
-      <entry key="H1" value="4.856495570989968" />
-      <entry key="H2" value="5.380295627634993" />
-      <entry key="H4" value="5.677130804352798" />
-      <entry key="D1" value="5.944285985778412" />
-      <entry key="W1" value="5.991992978706789" />
+      <entry key="MS100" value="0.9544986203465957" />
+      <entry key="MS500" value="1.2961092766601947" />
+      <entry key="S2" value="2.8288461896106782" />
+      <entry key="S5" value="5.377501742963403" />
+      <entry key="S10" value="7.4378295020977285" />
+      <entry key="S30" value="9.581547334913932" />
+      <entry key="S60" value="10.256513839371735" />
+      <entry key="M2" value="10.619378853322068" />
+      <entry key="M5" value="10.914481402021583" />
+      <entry key="M10" value="11.447799590322365" />
+      <entry key="M15" value="11.98179936682497" />
+      <entry key="M30" value="13.007403654672823" />
+      <entry key="H1" value="13.838932065840687" />
+      <entry key="H2" value="14.371029676110759" />
+      <entry key="H4" value="14.672360661886623" />
+      <entry key="D1" value="14.943470388819163" />
+      <entry key="W1" value="14.991875940043927" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -348,7 +225,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="created console app" />
-    <option name="LAST_COMMIT_MESSAGE" value="created console app" />
+    <MESSAGE value="finished the Observer example (copied)" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished the Observer example (copied)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
